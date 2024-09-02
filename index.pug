@@ -1,0 +1,30 @@
+doctype html
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        title Markiper
+        script(src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js" defer) 
+        script(src="https://kit.fontawesome.com/a6ebdf5f12.js" crossorigin="anonymous" defer)
+        script(src="script.js" defer) 
+        link(rel="stylesheet", href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css")
+        link(rel="stylesheet", href="css/styles.css")
+    body 
+        .container 
+            .header-container 
+                header.header 
+                    <i class="fa-regular fa-user"></i>
+                    h1.title JhonyApp
+                    <i class="fa-solid fa-bars"></i>
+            .main-container
+                main.main 
+                    .character  
+                        p.select Select your character
+                        .swiper 
+                            .swiper-wrapper 
+                                
+                                for name in ['bowser','link','mario','peach']
+                                    .swiper-slide
+                                        img(src=`images/${name}.png`, alt="")
+                                        p.name= `${name}`
+                            .swiper-pagination 
