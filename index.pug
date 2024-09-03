@@ -3,7 +3,7 @@ html(lang="en")
     head
         meta(charset="UTF-8")
         meta(name="viewport", content="width=device-width, initial-scale=1.0")
-        title Markiper
+        title Nintendo
         script(src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js" defer) 
         script(src="https://kit.fontawesome.com/a6ebdf5f12.js" crossorigin="anonymous" defer)
         script(src="script.js" defer) 
@@ -15,7 +15,59 @@ html(lang="en")
                 header.header 
                     <i class="fa-regular fa-user"></i>
                     h1.title JhonyApp
-                    <i class="fa-solid fa-bars"></i>
+                    input#nav-bar(type="checkbox", name="nav-bar")
+                    label(for="nav-bar") 
+                        <i class="fa-solid fa-bars"></i>
+                    nav.nav-bar 
+                        ul.nav-list 
+                            li.nav-items 
+                                a.nav-links(href="#") Home
+                            li.nav-items 
+                                a.nav-links(href="#") User
+                            li.nav-items 
+                                a.nav-links(href="#") Gallery
+                            li.nav-items 
+                                a.nav-links(href="#") Donwloads
+                            li.nav-items 
+                                a.nav-links(href="#") Amiibo
+                            li.nav-items 
+                                a.nav-links(href="#") eshop
+            .main-container
+                main.main 
+                    .character  
+                        p.select Select your character
+                        .swiper 
+                            .swiper-wrapper 
+                                
+                                for name in ['bowser','link','mario','peach']
+                                    .swiper-slide
+                                        img(src=`images/${name}.png`, alt="")
+                                        p.name= `${name}`
+                            .swiper-pagination 
+            .main-container
+                main.main 
+                    .character  
+                        p.select Select your character
+                        .swiper 
+                            .swiper-wrapper 
+                                
+                                for name in ['bowser','link','mario','peach']
+                                    .swiper-slide
+                                        img(src=`images/${name}.png`, alt="")
+                                        p.name= `${name}`
+                            .swiper-pagination 
+            .main-container
+                main.main 
+                    .character  
+                        p.select Select your character
+                        .swiper 
+                            .swiper-wrapper 
+                                
+                                for name in ['bowser','link','mario','peach']
+                                    .swiper-slide
+                                        img(src=`images/${name}.png`, alt="")
+                                        p.name= `${name}`
+                            .swiper-pagination 
             .main-container
                 main.main 
                     .character  
